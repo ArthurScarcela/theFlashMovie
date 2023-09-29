@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+#banner{
+    background-image: url(images/BANNER.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.container-block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+    
+}
+
+.block{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 50px;
+    column-gap: 20px;
+    border-radius: 20px;
+    
+}
+
+.pictures{
+    background-color: none;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 3s;
+    display: flex;
+    
+}
+.pictures:hover{
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(1.10);
+
+}
+
+.img1{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMDFhZTc3NWQtY2UyZS00OGYzLTgxNTUtYjYxMjZjMmEyMjcwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg');
+}
+.img2{
+    background-image: url('https://portalpopline.com.br/wp-content/uploads/2023/02/the-flash-exibicao-antecipada-cinemacon-2023.jpg');
+}
+.img3{
+    background-image: url('https://universoheroico.com.br/wp-content/uploads/2021/10/Imagem-do-filme-The-Flash.jpeg');
+}
+.img4{
+    background-image: url('https://media.distractify.com/brand-img/FGQxTVuJQ/0x0/who-plays-batman-in-the-flash-movie-1676303989932.jpg');
+}
+.img5{
+    background-image: url('https://pbs.twimg.com/media/FY6lKa7XoAAqfsY?format=jpg&name=900x900');
+}
+.img6{
+    background-image: url('https://pbs.twimg.com/media/Fo3yOejakAEe_GE.jpg:large');
+}
+.img7{
+    background-image: url('https://wegotthiscovered.com/wp-content/uploads/2023/02/the-flash-7.jpg?w=1200');
+}
+.img8{
+    background-image: url('https://images.thedirect.com/media/photos/zod-supergirl.jpg');
+}
+
+
+
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+
+}
+nav{
+    width: 60%;
+}
+#emuso{
+    color: #ff6600;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+li{
+ 
+ color: #FFF;
+ cursor: pointer;
+ font-size: 40px;
+ transition: 0.5s;
+ font-family: 'Bebas Neue', cursive;
+ position: relative;
+
+}
+
+li:hover{
+    color:#ff6600;
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+nav{
+    display: none;
+}
+
+.emuso{
+    color: #ff6600;
+}
+#banner{
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.block{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.pictures{
+    height: 300px;
+}
+}
